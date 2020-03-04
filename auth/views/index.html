@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<form id="signup-form" style="border:1px solid #ccc">
+			<div class="container">
+				<h1>Sign Up</h1>
+				<p>Please fill in this form to create an account.</p>
+				<hr />
+
+				<label for="id"><b>userid</b></label>
+				<input
+					id="userid"
+					type="text"
+					placeholder="Enter Email"
+					name="email"
+					required
+				/>
+
+				<label for="psw"><b>Password</b></label>
+				<input
+					id="passw"
+					type="password"
+					placeholder="Enter Password"
+					name="psw"
+					required
+				/>
+
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input
+					id="re_pass"
+					type="password"
+					placeholder="Repeat Password"
+					name="psw-repeat"
+					required
+				/>
+
+				<div class="clearfix">
+					<button type="submit" class="signupbtn">Sign Up</button>
+				</div>
+			</div>
+		</form>
+		<form id="login-form" style="border:1px solid #ccc; display: none;">
+			<div class="container">
+				<h1>Login</h1>
+				<hr />
+
+				<label for="id"><b>userid</b></label>
+				<input
+					id="userid_2"
+					type="text"
+					placeholder="Enter Email"
+					name="email"
+					required
+				/>
+
+				<label for="psw"><b>Password</b></label>
+				<input
+					id="passw_2"
+					type="password"
+					placeholder="Enter Password"
+					name="psw"
+					required
+				/>
+				<div class="clearfix">
+					<button type="submit" class="signupbtn">login</button>
+				</div>
+			</div>
+		</form>
+		<div id="inform"></div>
+		<div class="user" id="user_details" style="display: none;"></div>
+		<div class="clearfix user" style="display: none;">
+			<button type="submit" class="signupbtn">login</button>
+		</div>
+		<div class="user" id="images" style="display: none;"></div>
+	</body>
+	<script src="/javascripts/signup.js"></script>
+</html>

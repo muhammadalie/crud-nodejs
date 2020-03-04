@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<form id="login-form" style="border:1px solid #ccc;">
+			<div class="container">
+				<h1>Login</h1>
+				<hr />
+
+				<label for="id"><b>userid</b></label>
+				<input
+					id="userid_2"
+					type="text"
+					placeholder="Enter Email"
+					name="email"
+					required
+				/>
+
+				<label for="psw"><b>Password</b></label>
+				<input
+					id="passw_2"
+					type="password"
+					placeholder="Enter Password"
+					name="psw"
+					required
+				/>
+				<div class="clearfix">
+					<button type="submit" class="signupbtn">login</button>
+				</div>
+			</div>
+		</form>
+		<div id="inform"></div>
+		<div class="user" id="user_details" style="display: none;"></div>
+		<div id="images" style="display: none;">Files</div>
+	</body>
+	<script src="/javascripts/login.js"></script>
+</html>
