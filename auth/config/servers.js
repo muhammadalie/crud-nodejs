@@ -1,7 +1,32 @@
-const PROFILE_HOST = '127.0.0.1';
-const PROFILE_PORT = '8123';
-const STORE_HOST = '127.0.0.1';
-const STORE_PORT = '8124';
+const NODE_ENV = process.env.NODE_ENV;
+
+let PROFILE_HOST = '127.0.0.1';
+let PROFILE_PORT = '8123';
+let STORE_HOST = '127.0.0.1';
+let STORE_PORT = '8124';
+
+if (NODE_ENV === 'staging') {
+	PROFILE_HOST = '127.0.0.1';
+	PROFILE_PORT = '8123';
+	STORE_HOST = '127.0.0.1';
+	STORE_PORT = '8124';
+} else if (NODE_ENV === 'testing') {
+	PROFILE_HOST = '127.0.0.1';
+	PROFILE_PORT = '8123';
+	STORE_HOST = '127.0.0.1';
+	STORE_PORT = '8124';
+} else if (NODE_ENV === 'production') {
+	PROFILE_HOST = '127.0.0.1';
+	PROFILE_PORT = '8123';
+	STORE_HOST = '127.0.0.1';
+	STORE_PORT = '8124';
+} else if (NODE_ENV === 'local') {
+	PROFILE_HOST = '127.0.0.1';
+	PROFILE_PORT = '8123';
+	STORE_HOST = '127.0.0.1';
+	STORE_PORT = '8124';
+}
+
 module.exports = {
 	PROFILE_HOST: PROFILE_HOST,
 	PROFILE_PORT: PROFILE_PORT,
